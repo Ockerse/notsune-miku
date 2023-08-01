@@ -1,0 +1,153 @@
+/* style.css */
+/* Define the @font-face rule */
+@font-face {
+  font-family: 'MyCustomFont'; /* Font family name to use later */
+  src: url('static/fonts/VOC-IT.ttf') format('truetype'); /* Path to the .ttf font file */
+}
+
+
+/* Style for the body element to set the background color and font family */
+body {
+  background-image: url("../static/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto /* Fill the entire viewport height */
+}
+
+/* Set the background image for result.html */
+body.result-body {
+  background-image: url("../static/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto; /* Fill the entire viewport height */
+}
+
+/* Style for the header */
+.header {
+  
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  font-family: 'MyCustomFont', sans-serif;
+}
+
+/* Style for the title image */
+.title-image {
+  display: block;
+  margin: 0 auto; /* Center the image */
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Add some spacing between the image and the title */
+}
+
+/* Style for the h1 element inside the header */
+.header h1 {
+  margin: 0;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  color: white;
+}
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* Style for the file input and submit button inside the form */
+.container input[type="file"],
+.container input[type="submit"] {
+  margin: 10px;
+  
+}
+
+/* Additional styles for the submit button */
+.container input[type="submit"] {
+  background-color: #5cd5ce;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.container input[type="submit"]:hover {
+  background-color: #83ddd7;
+}
+
+.chibi-image {
+  display: block;
+  margin: 0 auto; /* Center the image */
+  max-width: 25%; /* Adjust the image size as needed */
+  height: auto;
+}
+
+.uploaded-image {
+  width: auto; /* Set a fixed width for the image */
+  height: auto; /* Set a fixed height for the image */
+  display: block;
+  margin: 0 auto auto; /* Center the image and add margin to the bottom */
+  border-radius: 4px; /* Add rounded corners to the border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 4px #000000; /* Add a subtle shadow and white stroke to the image */
+}
+
+.prediction-text {
+  font-family: 'MyCustomFont', sans-serif;
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Style for the "Miku" text */
+.miku-text {
+  font-family: 'MyCustomFont', sans-serif;
+  color: green;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Style for the "Not Miku" text */
+.not-miku-text {
+  font-family: 'MyCustomFont', sans-serif;
+  color: red;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+
+.header {
+  text-align: center;
+}
+
+.prediction-text {
+  font-size: 24px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.uploaded-image {
+  max-width: 300px; /* Adjust the width as needed */
+  max-height: fit-content;
+  margin-bottom: 10px; /* Adjust the bottom margin as needed */
+  width: fit-content; /* Set a fixed width for the image */
+  height: fit-content; /* Set a fixed height for the image */
+  display: block;
+  margin: 0 auto auto; /* Center the image and add margin to the bottom */
+  border-radius: 4px; /* Add rounded corners to the border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 4px #000000; /* Add a subtle shadow and white stroke to the image */
+}
+

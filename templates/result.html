@@ -1,0 +1,32 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notsune Miku</title>
+    <link rel="icon" href="static/images/icon.png" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="header">
+    <img src="{{ url_for('static', filename='images/title.png') }}" alt="Title Image" class="title-image">
+    <h1>Prediction Result:</h1>
+</div>
+<h2 class="prediction-text">
+    {% if predicted_class == "Miku" %}
+        <span class="miku-text">Miku</span>
+    {% else %}
+        <span class="not-miku-text">Not Miku</span>
+    {% endif %}
+</h2>
+
+<!-- Display the uploaded image and additional images -->
+<div class="container">
+    {% if predicted_class == "Miku" %}
+        <div class="image-container"><img src="data:image/jpeg;base64,{{ base64_image }}" alt="Uploaded Image" class="uploaded-image"></div>
+    {% else %}
+        <div class="image-container"><img src="data:image/jpeg;base64,{{ base64_image }}" alt="Uploaded Image" class="uploaded-image"></div>
+    {% endif %}
+</div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notsune Miku</title>
+    <link rel="icon" href="static/images/icon.png" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="header">
+    <!-- Center the title image -->
+    <img src="{{ url_for('static', filename='images/title.png') }}" alt="Title Image" class="title-image">
+    <h1>Upload an Image</h1>
+</div>
+<div class="container">
+    <!-- Add the user-uploaded image below the title image -->
+    
+    <img src="{{ url_for('static', filename='images/chibi.png') }}" alt="Chibi Image" class="chibi-image" id="uploaded-image">
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="upload-input" class="custom-file-input"> <!-- Add the custom class -->
+        <input type="submit" value="Predict" class="predict-button"> <!-- Add a custom class to the submit button -->
+    </form>
+</div>
+</body>
+</html>
