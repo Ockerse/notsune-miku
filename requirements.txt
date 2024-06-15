@@ -41,7 +41,7 @@ keras==2.15.0
 keyring==24.3.1
 kiwisolver==1.4.5
 libclang==16.0.6
-numpy~=1.23.5
+numpy~=1.24.0
 Markdown==3.5.1
 MarkupSafe==2.1.5
 matplotlib==3.9.0
