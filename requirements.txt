@@ -30,7 +30,7 @@ h5py==3.10.0
 huggingface-hub==0.20.3
 idna==3.6
 importlib-metadata==6.8.0
-importlib_resources==6.4.0
+importlib-resources==6.4.0
 inputs==0.5
 installer==0.7.0
 itsdangerous==2.1.2
@@ -44,5 +44,4 @@ libclang==16.0.6
 Markdown==3.5.1
 MarkupSafe==2.1.5
 matplotlib==3.9.0
-python-3.11.5
-ml-dtypes==0.2.0  # Adjust this version if necessary
+ml-dtypes==0.2.0
