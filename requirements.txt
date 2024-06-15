@@ -44,4 +44,5 @@ libclang==16.0.6
 Markdown==3.5.1
 MarkupSafe==2.1.5
 matplotlib==3.9.0
+python-3.11.5
 ml-dtypes==0.2.0  # Adjust this version if necessary
